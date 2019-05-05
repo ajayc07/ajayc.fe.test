@@ -1,0 +1,241 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.parent-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #222629;
+}
+
+.scrollable-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222629;
+}
+
+.scrollable-content .portfolio-contanier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scrollable-content .portfolio-contanier .img {
+  border: 3px solid #86C232;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  left: 30%;
+  background-color: #474B4F;
+}
+
+@media screen and (max-width: 600px) {
+  .scrollable-content .portfolio-contanier .img {
+    top: 0;
+    left: 20%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.scrollable-content .portfolio-contanier .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  width: 50%;
+  border: 3px solid #86C232;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #474B4F;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .scrollable-content .portfolio-contanier .portfolio {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.scrollable-content .portfolio-contanier .portfolio .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C5C6C7;
+  padding-top: 135px;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #C5C6C7;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container .git-repo {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container h1 {
+  color: #92c232;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container .project {
+  margin: 10px 10px;
+  padding: 5px 16px;
+  min-height: 250px;
+  background-color: #222629;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container .project .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container .project .icon-container a {
+  margin-right: 16px;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C5C6C7;
+  padding-top: 135px;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .buttons {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: 2px solid #86C232;
+  background-color: transparent;
+  min-width: 100px;
+  height: 60%;
+  border-radius: 10px;
+  color: #C5C6C7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .scrollable-content .portfolio-contanier .portfolio .buttons {
+    height: 30%;
+  }
+  .scrollable-content .portfolio-contanier .portfolio .buttons button {
+    height: 30%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
