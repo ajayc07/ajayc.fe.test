@@ -43,5 +43,5 @@ function contactClicked() {
 }
 
 function resumeClicked() {
-    window.open('/assets/Ajay resume.pdf');
+    window.open('https://drive.google.com/open?id=1FfRJBxtulyniA8LcehNlgbmnmftmojGE');
 }
