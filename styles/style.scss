@@ -90,7 +90,11 @@ html ,body{
                 justify-content: space-evenly;
                 align-items: center;
                 color: #C5C6C7;
-                padding-top: 135px;
+                padding: 85px 25px 0;
+                
+                .intro-desc {
+                    text-align: justify;
+                }
             }
 
 
@@ -110,6 +114,11 @@ html ,body{
                 color: #C5C6C7;
                
                 .project{
+
+                    .proj-desc {
+                        text-align: justify;
+                    }
+
                     margin: 10px 10px;
                     padding: 5px 16px;
                     min-height: 250px;
@@ -117,6 +126,8 @@ html ,body{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    border-radius: 10px;
+
                     .icon-container{
                         display: flex;
                         justify-content: center;
@@ -126,6 +137,7 @@ html ,body{
                             margin-right: 16px;
                         }
                     }
+
                 }
 
             }
@@ -162,6 +174,10 @@ html ,body{
                     cursor: pointer;
                 }
 
+                #btn-resume:hover{
+                    background-color: #86C232;
+                    color: #fff;
+                }
                 @media screen and (max-width : 600px){
                     
                     height: 30%;

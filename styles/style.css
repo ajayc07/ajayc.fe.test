@@ -118,7 +118,11 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   color: #C5C6C7;
-  padding-top: 135px;
+  padding: 85px 25px 0;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .intro .intro-desc {
+  text-align: justify;
 }
 
 .scrollable-content .portfolio-contanier .portfolio .project-container {
@@ -159,6 +163,11 @@ html, body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 10px;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .project-container .project .proj-desc {
+  text-align: justify;
 }
 
 .scrollable-content .portfolio-contanier .portfolio .project-container .project .icon-container {
@@ -226,6 +235,11 @@ html, body {
   border-radius: 10px;
   color: #C5C6C7;
   cursor: pointer;
+}
+
+.scrollable-content .portfolio-contanier .portfolio .buttons #btn-resume:hover {
+  background-color: #86C232;
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {
