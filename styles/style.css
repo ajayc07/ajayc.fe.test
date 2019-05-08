@@ -55,6 +55,13 @@ html, body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+  .scrollable-content .portfolio-contanier {
+    height: 100%;
+    top: 16px;
+  }
+}
+
 .scrollable-content .portfolio-contanier .img {
   border: 3px solid #86C232;
   width: 200px;
@@ -123,6 +130,7 @@ html, body {
 
 .scrollable-content .portfolio-contanier .portfolio .intro .intro-desc {
   text-align: justify;
+  font-family: cursive;
 }
 
 .scrollable-content .portfolio-contanier .portfolio .project-container {
@@ -168,6 +176,7 @@ html, body {
 
 .scrollable-content .portfolio-contanier .portfolio .project-container .project .proj-desc {
   text-align: justify;
+  font-family: cursive;
 }
 
 .scrollable-content .portfolio-contanier .portfolio .project-container .project .icon-container {
@@ -190,18 +199,20 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #C5C6C7;
-  padding-top: 135px;
 }
 
 .scrollable-content .portfolio-contanier .portfolio .buttons {

@@ -18,6 +18,12 @@ function projectClicked() {
     document.getElementById("btn-proj").style.color = "#fff";
     document.getElementById("btn-home").style.color = "#C5C6C7";
     document.getElementById("btn-contact").style.color = "#C5C6C7";
+
+    if (window.matchMedia('screen and (max-width: 600px)').matches) {
+        
+        document.getElementById("portfolio").style.width = "80%";
+        document.getElementById("portfolio").style.height = "90%";
+    }
 }
 
 function homeClicked() {

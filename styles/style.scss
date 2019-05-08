@@ -42,6 +42,11 @@ html ,body{
         z-index: 0;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+        @media screen and (max-width : 600px){
+                
+           height: 100%;
+           top: 16px;
+        }
         
         .img{
             border: 3px solid $button-border;
@@ -94,6 +99,7 @@ html ,body{
                 
                 .intro-desc {
                     text-align: justify;
+                    font-family: cursive;
                 }
             }
 
@@ -117,6 +123,7 @@ html ,body{
 
                     .proj-desc {
                         text-align: justify;
+                        font-family: cursive;
                     }
 
                     margin: 10px 10px;
@@ -145,11 +152,11 @@ html ,body{
             .contact {
 
                 display: flex;
+                flex: 1;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 color: #C5C6C7;
-                padding-top: 135px;
             }
 
             .buttons{
